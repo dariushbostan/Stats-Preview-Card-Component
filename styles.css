@@ -37,7 +37,7 @@ body {
     overflow: hidden;
     margin: auto;
     max-width: 70rem;
-    height: 28.125rem;
+    height: 100%
 }
 
 .text {
@@ -127,3 +127,49 @@ body {
     width: 100%;
     opacity: 0.3;
 }
+
+@media only screen and (max-width: 830px) {
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 2rem;
+    }
+    }
+
+
+    @media only screen and (max-width: 400px) {
+
+        .container {
+            justify-content: center;
+            grid-template-columns: 1fr;
+            margin: 20px;
+        }
+
+        .text {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .info {
+            margin: auto;
+            width: 100%;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .stats {
+            width: 100%;
+        }
+
+        .img-container {
+            background-image: url(./images/image-header-mobile.jpg);
+            order: -1;
+            height: 230px;
+            grid-column: 1/2;
+        }
+    
+    }
+
